@@ -23,7 +23,7 @@
     <li> Thought provoking media & books </li>
     <li> Being treated with basic human dignity </li>
     <li> Anything well engineered [i.e. Beautiful architecture (so we don't have to live in caves), high-performing vehicles (so we aren't relegated solely to walking or can travel thousands of miles in hours, maybe even colonize other planets ¯\_(ツ)_/¯ ) ] </li>
-    <li> The thought of a better tomorrow </li>
+    <li> The thought of a better tomorrow. </li>
    </ul>
    
   </body>
