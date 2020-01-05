@@ -18,7 +18,7 @@
 
    <h3> Some of my favorite things in no particular order </h3>
    <!--Unordered list  -->
-   <ul>
+<ul>
     <li> Snowboarding </li>
     <li> Thought provoking media & books. </li>
     <li> Technology and learning about the world. </li> 
@@ -29,6 +29,6 @@
     <li> The thought of a better tomorrow. </li>
     <li> Learning the intricacies of AI in the hopes of totally automating any and all jobs/tasks ( aka chasing the AGI dragon ) to hopefully have time/resources for all other listed items. </li>
    </ul>
-   
+      
   </body>
 </html>
