@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dummy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* to create page specific styles */
+      body {
+        color: #0000ff;
+        /* Blue */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Dummy</h1>
+
+    <p>
+      This is a dummy page that helps us demonstrate reusable CSS stylesheets.
+      <a href="hello-css.html">Go back</a>.
+    </p>
+
+    <!--  Example of inline style  -->
+    <!-- Inline styles are the most specific way to define CSS. The color and text-decoration properties we defined here trump
+    everything. Even if we went back and added a text-decoration: none to our <style>
+        element,
+        it wouldn’t have any effect. // Inline styles should be avoided at all costs because they make it impossible to alter styles from an external
+        stylesheet.-->
+    <p>
+      Want to try crossing out an
+      <a
+        href="nowhere.html"
+        style="color: #990000; text-decoration: line-through;"
+        >obsolete link</a
+      >? This is your chance!
+    </p>
+  </body>
+</html>
