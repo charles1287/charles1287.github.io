@@ -1,0 +1,61 @@
+/* This universal selector (*) matches every HTML element, effectively resetting the margin and padding properties for our web page. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  background-color: #dde0e3; /* Light gray */
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5d6063;
+}
+
+p {
+  /* padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px; */
+
+  /* padding: 20px 10px; (Vertical  Horizontal) */
+
+  padding: 20px 0 20px 10px; /* Top  Right  Bottom  Left */
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+body {
+  text-align: center;
+}
+
+em,
+strong {
+  background-color: #b2d6ff;
+  /* display: block; it’s almost never a good idea to turn <em> and <strong> into block elements*/
+  display: inline; /* This is the default for em and strong */
+}
+
+strong {
+  margin: 50px;
+}
+
+div {
+  color: #fff;
+  background-color: #5995da;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5d6063;
+  border-radius: 5px;
+
+  width: 200px;
+  box-sizing: border-box; /* forces the actual width of the box to be 200px—including padding and borders */
+  /* border-box is best practice */
+
+  margin: 20px auto; /* Vertical  Horizontal */
+  /* Note that this only works on blocks that have an explicit width defined on them. Remove that width: 200px line, and our button will be the full width of the browser, making “center alignment” meaningless. */
+}
