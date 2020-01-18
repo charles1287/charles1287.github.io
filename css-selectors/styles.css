@@ -1,0 +1,109 @@
+.synopsis {
+  color: #7e8184; /* Light gray */
+  font-style: italic;
+}
+
+/* p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+} - Replacing the existing .synopsis rule should result in the exact same page.*/
+
+/* Descendant Selectors: let you target only those elements that are inside of another element. Not limited to class selectors */
+.synopsis em {
+  font-style: normal;
+}
+
+/* :link and :visited pseudo-classes in the selector. Without it, our color would not override the browser’s default a:link style. */
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: #fff;
+  background-color: #5995da; /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5d6063; /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #fff;
+  background-color: #76aeed; /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+  color: #fff;
+  background-color: #5995da; /* Blue */
+}
+
+/* ID Selector, singleton */
+#button-3 {
+  color: #5d6063; /* Dark gray */
+}
+
+#button-2 {
+  background-color: #d55c5f; /* Red */
+}
+
+/* Second button styling *ORDER MATTERS* */
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #eeb75a; /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #f5cf8e; /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #eeb75a; /* Yellow, overrides color from ".button" */
+}
+
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Child Selector used to avoid the sidebar paragraphs and select only the first <p> in our <div class='page'>, to limit its scope */
+.page > p:first-of-type {
+  color: #7e8184;
+  font-style: italic;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
+a:visited:hover {
+  color: orange;
+}
+
+a:visited:active {
+  color: red;
+}
+
+/* :last-of-type pseudo-class selects the final element of a particular type in its parent element. This gives us an alternative to class selectors for selecting specific elements. */
+p:last-of-type {
+  margin-bottom: 50px;
+}
