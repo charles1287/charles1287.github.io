@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995da; /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-between; /* space-around spreads its items out across its entire width; space-between value is similar, but it only adds that extra space between items. */
+}
+
+.links {
+  /* border: 1px solid #fff; -- White Border For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995da;
+  background-color: #d6e9fe;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995da;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+
+// Prhot Grid Column
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* flex-direction: row-reverse; <--- Really freaking cool! */
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+/* Unlike setting row-reverse and column-reverse on a flex container, order works across row/column boundaries. */
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #d6e9fe;
+  height: 200px;
+  flex: 1; /*  stretch to match the width of .footer */
+}
+
+.footer-three {
+  flex: 2;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995da;
+  /* Without that flex: initial; line, the flex: 1; declaration would be inherited from the .footer-item rule, causing the width properties to be ignored. initial fixes this, and we get a flexible layout that also contains fixed-width items. */
+  flex: initial;
+  width: 300px;
+}
+
+.signup {
+  margin-left: auto;
+}
