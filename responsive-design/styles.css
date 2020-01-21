@@ -47,8 +47,9 @@
   background-color: #c8c6fa;
 }
 
-.illustration {
+.illustration img {
   width: 100%;
+  display: block;
 }
 
 /* Mobile Styles */
@@ -56,6 +57,17 @@
   body {
     background-color: #f09a9d; /* Red */
   }
+}
+
+.header {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
 }
 
 /* Tablet Styles */
